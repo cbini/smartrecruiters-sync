@@ -7,7 +7,7 @@ from io import StringIO
 
 import pandas as pd
 import requests
-from dotenv import load_dotenv, main
+from dotenv import load_dotenv
 from google.cloud import storage
 
 load_dotenv()
