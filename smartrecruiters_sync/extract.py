@@ -123,7 +123,7 @@ def main():
 
         # upload to GCS
         destination_blob_name = "smartrecruiters/" + "/".join(data_filepath.parts[-2:])
-        
+
         print(f"\tUploading to {destination_blob_name}...")
         blob = gcs_bucket.blob(destination_blob_name)
         blob.upload_from_filename(data_filepath)
